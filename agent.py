@@ -68,7 +68,7 @@ def ask_agentyilmaz(student_id: str, username: str,
     full_prompt = f"{system}\n\nUser message: {message}"
 
     response = client.models.generate_content(
-        model="gemini-2.5-pro",
+        model="gemini-2.5-flash",
         contents=full_prompt
     )
 
